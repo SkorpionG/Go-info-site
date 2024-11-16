@@ -1,0 +1,102 @@
+/* Reset Default Styling */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: DFKai-sb, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* -------------------------------------------------------- */
+
+/* Header and Navigation */
+
+header.header>div.topbar {
+  padding: 1rem;
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header.header>div.topbar h1 {
+  font-size: 2.5rem;
+}
+
+header.header>div.topbar h3 {
+  font-size: 1rem;
+}
+
+header.header>nav.navbar {
+  background-color: black;
+}
+
+header.header>nav.navbar>ul.nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
+header.header>nav.navbar>ul.nav-list>li.nav-items {
+  padding: 0.8rem 1.2rem;
+}
+
+nav.navbar>ul.nav-list>li.nav-items>a.nav-links {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+nav.navbar>ul.nav-list>li.nav-items>a.nav-links:hover {
+  color: yellow;
+}
+
+nav.navbar>ul.nav-list>li.nav-items>a.nav-links.active {
+  color: yellow;
+}
+
+/* -------------------------------------------------------- */
+
+main.main-container {
+  padding: 1rem;
+}
+
+main.main-container section {
+  padding: 1rem;
+}
+
+/* -------------------------------------------------------- */
+
+p {
+  padding: 0.5rem 0rem;
+}
+
+hr {
+  margin: 0 1rem;
+}
+
+ul {
+  margin-left: 1.5rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: rgb(12, 122, 92);
+}
+
+/* -------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
