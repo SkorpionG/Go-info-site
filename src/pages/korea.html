@@ -7,6 +7,8 @@
         <title>圍棋資訊網 | 韓國棋院</title>
         <link rel="stylesheet" href="../style/style.css">
         <link rel="icon" href="../../public/favicon.svg">
+        <script src="../../src/components/site-header.js"></script>
+        <script src="../../src/components/site-canvas-nest.js"></script>
 
         <style>
             #player-list-title {
@@ -32,21 +34,7 @@
     </head>
 
     <body>
-        <header id="korea-header" class="header">
-            <div id="korea-topbar" class="topbar">
-                <h1>圍棋資訊網</h1>
-                <h3>圍棋是一種策略棋類，使用格狀棋盤及黑白二色棋子進行對弈。起源於中國，中國古時有「弁」、「基」、「手談」等多種稱謂，屬琴棋書畫四藝。</h3>
-            </div>
-            <nav id="korea-navbar" class="navbar">
-                <ul id="korea-nav-list" class="nav-list">
-                    <li class="nav-items"><a class="nav-links" href="../../index.html">網站首頁</a></li>
-                    <li class="nav-items"><a class="nav-links active" href="#">韓國棋院</a></li>
-                    <li class="nav-items"><a class="nav-links" href="./japan.html">日本棋院</a></li>
-                    <li class="nav-items"><a class="nav-links" href="./china.html">中國棋院</a></li>
-                    <li class="nav-items"><a class="nav-links" href="./taiwan.html">海峰棋院</a></li>
-                </ul>
-            </nav>
-        </header>
+        <site-header active="korea" root="../../"></site-header>
         <main id="korea-main" class="main-container">
             <section id="korea-info">
                 <p>
@@ -112,10 +100,7 @@
         </main>
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js"></script>
         <script type="module" src="../script.js"></script> -->
-        <script type="text/javascript" color="140,252,3" pointColor="3,252,157" opacity="1" zIndex="-2" count="99"
-            src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js"
-            integrity="sha512-P+NGabN/TJDOnCVOFJO+E06TBm4i+M8dTT91lWg/8UpwLrzicEXIypmABPpA47D0x6r+yxFHjYIZKWhc1h7xlQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <site-canvas-nest color="140,252,3" point-color="3,252,157"></site-canvas-nest>
     </body>
 
 </html>

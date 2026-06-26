@@ -7,6 +7,8 @@
         <title>圍棋資訊網</title>
         <link rel="stylesheet" href="./src/style/style.css">
         <link rel="icon" href="./public/favicon.svg">
+        <script src="./src/components/site-header.js"></script>
+        <script src="./src/components/site-canvas-nest.js"></script>
 
         <style>
             main#index-main {
@@ -65,21 +67,7 @@
     </head>
 
     <body>
-        <header id="index-header" class="header">
-            <div id="index-topbar" class="topbar">
-                <h1>圍棋資訊網</h1>
-                <h3>圍棋是一種策略棋類，使用格狀棋盤及黑白二色棋子進行對弈。起源於中國，中國古時有「弁」、「基」、「手談」等多種稱謂，屬琴棋書畫四藝。</h3>
-            </div>
-            <nav id="index-navbar" class="navbar">
-                <ul id="index-nav-list" class="nav-list">
-                    <li class="nav-items"><a class="nav-links active" href="#">網站首頁</a></li>
-                    <li class="nav-items"><a class="nav-links" href="./src/pages/korea.html">韓國棋院</a></li>
-                    <li class="nav-items"><a class="nav-links" href="./src/pages/japan.html">日本棋院</a></li>
-                    <li class="nav-items"><a class="nav-links" href="./src/pages/china.html">中國棋院</a></li>
-                    <li class="nav-items"><a class="nav-links" href="./src/pages/taiwan.html">海峰棋院</a></li>
-                </ul>
-            </nav>
-        </header>
+        <site-header active="home" root="./"></site-header>
         <main id="index-main" class="main-container">
             <section id="main-info-left">
                 <h3>圍棋性質</h3>
@@ -175,10 +163,7 @@
                 </section>
             </section>
         </main>
-        <script type="text/javascript" color="252,244,3" pointColor="28,3,252" opacity="1" zIndex="-2" count="99"
-            src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js"
-            integrity="sha512-P+NGabN/TJDOnCVOFJO+E06TBm4i+M8dTT91lWg/8UpwLrzicEXIypmABPpA47D0x6r+yxFHjYIZKWhc1h7xlQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <site-canvas-nest color="252,244,3" point-color="28,3,252"></site-canvas-nest>
     </body>
 
 </html>
