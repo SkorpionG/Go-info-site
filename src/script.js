@@ -6,8 +6,6 @@ ${Math.floor(Math.random() * 56) + 200},
 ${Math.floor(Math.random() * 56) + 200},
 ${Math.floor(Math.random() * 56) + 200}
 `;
-console.log(color);
-console.log(Math.floor(Math.random() * 56) + 200);
 let opacity = Math.floor(Math.random() * 11) / 10;
 
 const config = {
