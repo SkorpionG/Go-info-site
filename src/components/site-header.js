@@ -13,29 +13,33 @@
  */
 class SiteHeader extends HTMLElement {
   connectedCallback() {
-    const active = this.getAttribute("active") || "home";
-    const root = this.getAttribute("root") || "./";
+    const active = this.getAttribute('active') || 'home';
+    const root = this.getAttribute('root') || './';
 
     // All nav entries — hrefs are resolved from the project root
     const pages = [
-      { key: "home",   label: "網站首頁", href: `${root}index.html`            },
-      { key: "korea",  label: "韓國棋院", href: `${root}src/pages/korea.html`  },
-      { key: "japan",  label: "日本棋院", href: `${root}src/pages/japan.html`  },
-      { key: "china",  label: "中國棋院", href: `${root}src/pages/china.html`  },
-      { key: "taiwan", label: "海峰棋院", href: `${root}src/pages/taiwan.html` },
+      { key: 'home', label: '網站首頁', href: `${root}index.html` },
+      { key: 'korea', label: '韓國棋院', href: `${root}src/pages/korea.html` },
+      { key: 'japan', label: '日本棋院', href: `${root}src/pages/japan.html` },
+      { key: 'china', label: '中國棋院', href: `${root}src/pages/china.html` },
+      {
+        key: 'taiwan',
+        label: '海峰棋院',
+        href: `${root}src/pages/taiwan.html`,
+      },
     ];
 
     const navItems = pages
       .map(
         (p) => `
         <li class="nav-items">
-          <a class="nav-links${p.key === active ? " active" : ""}"
-             href="${p.key === active ? "#" : p.href}">
+          <a class="nav-links${p.key === active ? ' active' : ''}"
+             href="${p.key === active ? '#' : p.href}">
             ${p.label}
           </a>
         </li>`
       )
-      .join("");
+      .join('');
 
     this.innerHTML = `
       <header class="header">
@@ -52,4 +56,4 @@ class SiteHeader extends HTMLElement {
   }
 }
 
-customElements.define("site-header", SiteHeader);
+customElements.define('site-header', SiteHeader);

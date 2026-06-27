@@ -26,29 +26,31 @@
  */
 class SiteCanvasNest extends HTMLElement {
   connectedCallback() {
-    const color      = this.getAttribute("color")       || "252,244,3";
-    const pointColor = this.getAttribute("point-color") || "28,3,252";
-    const opacity    = this.getAttribute("opacity")     || "1";
-    const zIndex     = this.getAttribute("z-index")     || "-2";
-    const count      = this.getAttribute("count")       || "99";
+    const color = this.getAttribute('color') || '252,244,3';
+    const pointColor = this.getAttribute('point-color') || '28,3,252';
+    const opacity = this.getAttribute('opacity') || '1';
+    const zIndex = this.getAttribute('z-index') || '-2';
+    const count = this.getAttribute('count') || '99';
 
     // Append canvas-nest.js with color attrs set directly on the script tag.
     // canvas-nest reads config from the last <script> in the document, which
     // will be this element itself when it runs.
-    const script = document.createElement("script");
-    script.type = "text/javascript";
-    script.setAttribute("color",      color);
-    script.setAttribute("pointColor", pointColor);
-    script.setAttribute("opacity",    opacity);
-    script.setAttribute("zIndex",     zIndex);
-    script.setAttribute("count",      count);
-    script.src = "https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js";
-    script.integrity = "sha512-P+NGabN/TJDOnCVOFJO+E06TBm4i+M8dTT91lWg/8UpwLrzicEXIypmABPpA47D0x6r+yxFHjYIZKWhc1h7xlQ==";
-    script.crossOrigin = "anonymous";
-    script.referrerPolicy = "no-referrer";
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.setAttribute('color', color);
+    script.setAttribute('pointColor', pointColor);
+    script.setAttribute('opacity', opacity);
+    script.setAttribute('zIndex', zIndex);
+    script.setAttribute('count', count);
+    script.src =
+      'https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js';
+    script.integrity =
+      'sha512-P+NGabN/TJDOnCVOFJO+E06TBm4i+M8dTT91lWg/8UpwLrzicEXIypmABPpA47D0x6r+yxFHjYIZKWhc1h7xlQ==';
+    script.crossOrigin = 'anonymous';
+    script.referrerPolicy = 'no-referrer';
 
     document.body.appendChild(script);
   }
 }
 
-customElements.define("site-canvas-nest", SiteCanvasNest);
+customElements.define('site-canvas-nest', SiteCanvasNest);

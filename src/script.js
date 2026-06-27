@@ -1,4 +1,4 @@
-import CanvasNest from "canvas-nest.js";
+import CanvasNest from 'canvas-nest.js';
 
 let count = Math.floor(Math.random() * 101) + 50;
 let color = `
@@ -16,7 +16,7 @@ const config = {
 };
 
 // Using config rendering effect at 'element'.
-const element = document.querySelector("body");
+const element = document.querySelector('body');
 const cn = new CanvasNest(element, config);
 
 // destroy

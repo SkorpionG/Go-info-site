@@ -20,46 +20,46 @@ h6 {
 
 /* Header and Navigation */
 
-header.header>div.topbar {
+header.header > div.topbar {
   padding: 1rem;
-  background-image: url("../../public/assets/background.png");
+  background-image: url('../../public/assets/background.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-header.header>div.topbar h1 {
+header.header > div.topbar h1 {
   font-size: 2.5rem;
 }
 
-header.header>div.topbar h3 {
+header.header > div.topbar h3 {
   font-size: 1rem;
 }
 
-header.header>nav.navbar {
+header.header > nav.navbar {
   background-color: black;
 }
 
-header.header>nav.navbar>ul.nav-list {
+header.header > nav.navbar > ul.nav-list {
   display: flex;
   list-style-type: none;
 }
 
-header.header>nav.navbar>ul.nav-list>li.nav-items {
+header.header > nav.navbar > ul.nav-list > li.nav-items {
   padding: 0.8rem 1.2rem;
 }
 
-nav.navbar>ul.nav-list>li.nav-items>a.nav-links {
+nav.navbar > ul.nav-list > li.nav-items > a.nav-links {
   color: white;
   text-decoration: none;
   font-size: 1.25rem;
   transition: all 0.3s ease;
 }
 
-nav.navbar>ul.nav-list>li.nav-items>a.nav-links:hover {
+nav.navbar > ul.nav-list > li.nav-items > a.nav-links:hover {
   color: yellow;
 }
 
-nav.navbar>ul.nav-list>li.nav-items>a.nav-links.active {
+nav.navbar > ul.nav-list > li.nav-items > a.nav-links.active {
   color: yellow;
 }
 
