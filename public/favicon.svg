@@ -1,3 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half" viewBox="0 0 16 16">
-  <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="boardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8B06C" />
+      <stop offset="100%" stop-color="#C28038" />
+    </linearGradient>
+    
+    <!-- Black Stone Gradient -->
+    <radialGradient id="blackStone" cx="35%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#555555" />
+      <stop offset="30%" stop-color="#222222" />
+      <stop offset="100%" stop-color="#050505" />
+    </radialGradient>
+    
+    <!-- White Stone Gradient -->
+    <radialGradient id="whiteStone" cx="35%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#f0f0f0" />
+      <stop offset="100%" stop-color="#d6d6d6" />
+    </radialGradient>
+    
+    <!-- Shadow Filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="8" dy="12" stdDeviation="8" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+    <filter id="boardShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Board Background -->
+  <rect width="480" height="480" x="16" y="16" rx="80" ry="80" fill="url(#boardGrad)" filter="url(#boardShadow)" />
+  
+  <!-- Grid Lines -->
+  <!-- Inner grid border -->
+  <rect width="320" height="320" x="96" y="96" fill="none" stroke="#5C3B15" stroke-width="8" stroke-linejoin="round" />
+  <!-- Center lines -->
+  <line x1="256" y1="96" x2="256" y2="416" stroke="#5C3B15" stroke-width="8" />
+  <line x1="96" y1="256" x2="416" y2="256" stroke="#5C3B15" stroke-width="8" />
+  
+  <!-- Hoshi (Star Point) -->
+  <circle cx="256" cy="256" r="12" fill="#5C3B15" />
+  
+  <!-- Black Stone -->
+  <circle cx="200" cy="210" r="75" fill="url(#blackStone)" filter="url(#shadow)" />
+  
+  <!-- White Stone -->
+  <circle cx="305" cy="305" r="75" fill="url(#whiteStone)" filter="url(#shadow)" />
 </svg>
