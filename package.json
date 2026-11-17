@@ -1,10 +1,9 @@
 {
   "name": "go-info-site",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A static, informational website about the game \"Go\"",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint src/**/*.js",
@@ -17,18 +16,17 @@
     "url": "git+https://github.com/SkorpionG/Go-info-site.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "SkorpionG",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/SkorpionG/Go-info-site/issues"
   },
   "homepage": "https://github.com/SkorpionG/Go-info-site#readme",
   "devDependencies": {
-    "eslint": "^10.6.0",
+    "eslint": "^10.15.0",
     "eslint-config-prettier": "^10.1.8",
     "husky": "^9.1.7",
-    "lint-staged": "^17.0.8",
-    "prettier": "^3.8.5"
+    "lint-staged": "^17.6.1",
+    "prettier": "^3.10.1"
   }
 }

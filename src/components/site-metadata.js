@@ -1,15 +1,65 @@
+/**
+ * SiteMetadata Web Component
+ *
+ * Usage:
+ *   <site-metadata root="./"></site-metadata>                     <!-- index.html -->
+ *   <site-metadata title="..." description="..." root="../../"></site-metadata> <!-- subpages -->
+ *
+ * Attributes:
+ *   title         — Page title (sets <title>, og:title, twitter:title)
+ *   description   — Meta description (sets description, og:description, twitter:description)
+ *   keywords      — Meta keywords
+ *   root          — Relative path back to the project root (e.g. "./" or "../../")
+ *   url           — Canonical / og:url (optional; defaults to the current page URL)
+ *   og-image      — og:image URL (optional; defaults to ${root}public/assets/og-image.png)
+ *   twitter-image — twitter:image URL (optional; defaults to ${root}public/assets/twitter-image.png)
+ */
 class SiteMetadata extends HTMLElement {
   connectedCallback() {
     const title = this.getAttribute('title') || '圍棋資訊網';
     const description = this.getAttribute('description') || '';
     const keywords = this.getAttribute('keywords') || '';
-    const url =
-      this.getAttribute('url') || 'https://skorpiong.github.io/Go-info-site/';
     const root = this.getAttribute('root') || './';
-    const ogImage =
-      'https://skorpiong.github.io/Go-info-site/public/assets/og-image.png';
-    const twitterImage =
-      'https://skorpiong.github.io/Go-info-site/public/assets/twitter-image.png';
+
+    // Dynamically derive the base URL from the current window location
+    let baseUrl = window.location.href;
+    try {
+      const parsed = new window.URL(window.location.href);
+      // Ensure trailing slash for directory paths without file extension so relative paths resolve correctly
+      if (
+        !parsed.pathname.endsWith('/') &&
+        !parsed.pathname.split('/').pop().includes('.')
+      ) {
+        parsed.pathname += '/';
+      }
+      parsed.search = '';
+      parsed.hash = '';
+      baseUrl = parsed.href;
+    } catch {
+      baseUrl = window.location.href;
+    }
+
+    const toAbsoluteUrl = (path) => {
+      try {
+        return new window.URL(path, baseUrl).href;
+      } catch {
+        return path;
+      }
+    };
+
+    const urlAttr = this.getAttribute('url');
+    const url = urlAttr ? toAbsoluteUrl(urlAttr) : baseUrl;
+
+    const ogImageAttr = this.getAttribute('og-image');
+    const ogImage = ogImageAttr
+      ? toAbsoluteUrl(ogImageAttr)
+      : toAbsoluteUrl(`${root}public/assets/og-image.png`);
+
+    const twitterImageAttr = this.getAttribute('twitter-image');
+    const twitterImage = twitterImageAttr
+      ? toAbsoluteUrl(twitterImageAttr)
+      : toAbsoluteUrl(`${root}public/assets/twitter-image.png`);
+
     const favicon = `${root}public/favicon.svg`;
 
     // Handle title safely
