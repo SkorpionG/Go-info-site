@@ -1,0 +1,19 @@
+#player-list-title {
+  font-size: 1.5rem;
+}
+
+div.player {
+  margin: 2rem;
+  border: 3px solid burlywood;
+  padding: 0.5rem;
+}
+
+div.player h4 {
+  font-size: 1.5rem;
+  color: rgb(0, 90, 91);
+}
+
+div.player h5 {
+  font-size: 1.05rem;
+  color: rgb(6, 120, 120);
+}

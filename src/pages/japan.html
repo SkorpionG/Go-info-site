@@ -1,94 +1,78 @@
 <!doctype html>
 <html lang="zh-Hant">
   <head>
+    <!-- Primary Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <site-metadata
-      title="圍棋資訊網 | 日本棋院"
-      description="探索日本圍棋的輝煌歷史與日本棋院的創立。介紹本因坊秀策、吳清源、木谷實的「新布局」革命，以及趙治勳、井山裕太等傳奇棋士。"
-      keywords="日本圍棋, 日本棋院, 本因坊秀策, 吳清源, 新布局, 圍棋歷史"
-      root="../../"
-    ></site-metadata>
+    <meta
+      name="description"
+      content="探索日本圍棋的輝煌歷史與日本棋院的創立。介紹本因坊秀策、吳清源、木谷實的「新布局」革命，以及趙治勳、井山裕太等傳奇棋士。"
+    />
+    <meta name="author" content="圍棋資訊網" />
+    <meta name="creator" content="SkorpionG" />
+    <meta name="publisher" content="SkorpionG" />
+    <meta name="application-name" content="圍棋資訊網" />
+    <meta name="keywords" content="日本圍棋, 日本棋院, 本因坊秀策, 吳清源, 新布局, 圍棋歷史" />
+
+    <!-- Search Engine Indexing -->
+    <meta name="robots" content="index, follow" />
+    <!-- <meta name="robots" content="noindex, nofollow" /> -->
+    <link rel="canonical" href="https://skorpiong.github.io/Go-info-site/src/pages/japan.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://skorpiong.github.io/Go-info-site/src/pages/japan.html"
+    />
+    <meta property="og:title" content="圍棋資訊網 | 日本棋院" />
+    <meta
+      property="og:description"
+      content="探索日本圍棋的輝煌歷史與日本棋院的創立。介紹本因坊秀策、吳清源、木谷實的「新布局」革命，以及趙治勳、井山裕太等傳奇棋士。"
+    />
+    <meta
+      property="og:image"
+      content="https://skorpiong.github.io/Go-info-site/public/og-image.png"
+    />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="536" />
+    <meta property="og:image:alt" content="木製棋盤與黑白圍棋棋子" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:site_name" content="圍棋資訊網" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://skorpiong.github.io/Go-info-site/src/pages/japan.html"
+    />
+    <meta name="twitter:title" content="圍棋資訊網 | 日本棋院" />
+    <meta
+      name="twitter:description"
+      content="探索日本圍棋的輝煌歷史與日本棋院的創立。介紹本因坊秀策、吳清源、木谷實的「新布局」革命，以及趙治勳、井山裕太等傳奇棋士。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://skorpiong.github.io/Go-info-site/public/twitter-image.png"
+    />
+    <meta name="twitter:image:alt" content="木製棋盤與黑白圍棋棋子" />
+
+    <!-- Favicons and App Icons -->
+    <link rel="icon" href="../../public/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="../../public/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../../public/apple-touch-icon.png" />
+    <link rel="manifest" href="../../public/site.webmanifest" />
+
+    <title>圍棋資訊網 | 日本棋院</title>
+
+    <!-- Stylesheets & Scripts -->
     <link rel="stylesheet" href="../styles/style.css" />
-    <script src="../../src/components/site-metadata.js"></script>
-    <script src="../../src/components/site-header.js"></script>
-    <script src="../../src/components/site-canvas-nest.js"></script>
-
-    <style>
-      section#japan-intro {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      div#japan-image {
-        flex: 1 1 300px;
-        margin: 1rem;
-        display: flex;
-        align-items: center;
-      }
-
-      div#japan-info {
-        flex: 3 1 600px;
-        margin: 1rem;
-      }
-
-      div#japan-image > img {
-        width: 100%;
-      }
-
-      section#competition {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      div#competition-info {
-        flex: 6 1 300px;
-        min-width: 55vw;
-      }
-
-      div#competition-piechart-container {
-        flex: 1 1 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      div#competition-piechart > div {
-        width: 100%;
-      }
-    </style>
-    <script
-      type="text/javascript"
-      src="https://www.gstatic.com/charts/loader.js"
-    ></script>
-    <script type="text/javascript">
-      google.charts.load('current', { packages: ['corechart'] });
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['棋賽', '獎金(日幣)'],
-          ['棋聖', 45000000],
-          ['十段', 7000000],
-          ['本因坊', 28000000],
-          ['碁聖', 8000000],
-          ['名人', 30000000],
-          ['王座', 14000000],
-          ['天元', 13000000],
-        ]);
-
-        var options = {
-          title: '日本七大棋戰獎金分布圓餅圖',
-        };
-
-        var chart = new google.visualization.PieChart(
-          document.getElementById('competition-piechart')
-        );
-
-        chart.draw(data, options);
-      }
-    </script>
+    <link rel="stylesheet" href="../styles/japan.css" />
+    <script type="module" src="../../src/metadata-sync.js"></script>
+    <script type="module" src="../../src/components/site-header.js"></script>
+    <script type="module" src="../../src/components/site-canvas-nest.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js" defer></script>
+    <script type="module" src="../../src/japan-chart.js"></script>
   </head>
 
   <body>
@@ -148,9 +132,6 @@
         </div>
       </section>
     </main>
-    <site-canvas-nest
-      color="3,252,248"
-      point-color="252,3,173"
-    ></site-canvas-nest>
+    <site-canvas-nest color="3,252,248" point-color="252,3,173"></site-canvas-nest>
   </body>
 </html>

@@ -1,0 +1,16 @@
+#china-team-table,
+#china-team-table th,
+#china-team-table td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 2px 4px;
+}
+
+#china-team-table {
+  min-width: 100%;
+}
+
+#china-team-table th {
+  background-color: rgb(86, 224, 192);
+  color: white;
+}

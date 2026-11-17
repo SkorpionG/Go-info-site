@@ -1,40 +1,79 @@
 <!doctype html>
 <html lang="zh-Hant">
   <head>
+    <!-- Primary Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <site-metadata
-      title="圍棋資訊網 | 韓國棋院"
-      description="了解韓國圍棋如何快速崛起並稱霸世界。介紹曹薰鉉、李昌鎬、李世乭、申真諝等傳奇人物，以及韓國棋院的職業制度。"
-      keywords="韓國圍棋, 韓國棋院, 李昌鎬, 李世乭, 曹薰鉉, 申真諝, 圍棋世界冠軍"
-      root="../../"
-    ></site-metadata>
+    <meta
+      name="description"
+      content="了解韓國圍棋如何快速崛起並稱霸世界。介紹曹薰鉉、李昌鎬、李世乭、申真諝等傳奇人物，以及韓國棋院的職業制度。"
+    />
+    <meta name="author" content="圍棋資訊網" />
+    <meta name="creator" content="SkorpionG" />
+    <meta name="publisher" content="SkorpionG" />
+    <meta name="application-name" content="圍棋資訊網" />
+    <meta
+      name="keywords"
+      content="韓國圍棋, 韓國棋院, 李昌鎬, 李世乭, 曹薰鉉, 申真諝, 圍棋世界冠軍"
+    />
+
+    <!-- Search Engine Indexing -->
+    <meta name="robots" content="index, follow" />
+    <!-- <meta name="robots" content="noindex, nofollow" /> -->
+    <link rel="canonical" href="https://skorpiong.github.io/Go-info-site/src/pages/korea.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://skorpiong.github.io/Go-info-site/src/pages/korea.html"
+    />
+    <meta property="og:title" content="圍棋資訊網 | 韓國棋院" />
+    <meta
+      property="og:description"
+      content="了解韓國圍棋如何快速崛起並稱霸世界。介紹曹薰鉉、李昌鎬、李世乭、申真諝等傳奇人物，以及韓國棋院的職業制度。"
+    />
+    <meta
+      property="og:image"
+      content="https://skorpiong.github.io/Go-info-site/public/og-image.png"
+    />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="536" />
+    <meta property="og:image:alt" content="木製棋盤與黑白圍棋棋子" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:site_name" content="圍棋資訊網" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://skorpiong.github.io/Go-info-site/src/pages/korea.html"
+    />
+    <meta name="twitter:title" content="圍棋資訊網 | 韓國棋院" />
+    <meta
+      name="twitter:description"
+      content="了解韓國圍棋如何快速崛起並稱霸世界。介紹曹薰鉉、李昌鎬、李世乭、申真諝等傳奇人物，以及韓國棋院的職業制度。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://skorpiong.github.io/Go-info-site/public/twitter-image.png"
+    />
+    <meta name="twitter:image:alt" content="木製棋盤與黑白圍棋棋子" />
+
+    <!-- Favicons and App Icons -->
+    <link rel="icon" href="../../public/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="../../public/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../../public/apple-touch-icon.png" />
+    <link rel="manifest" href="../../public/site.webmanifest" />
+
+    <title>圍棋資訊網 | 韓國棋院</title>
+
+    <!-- Stylesheets & Scripts -->
     <link rel="stylesheet" href="../styles/style.css" />
-    <script src="../../src/components/site-metadata.js"></script>
-    <script src="../../src/components/site-header.js"></script>
-    <script src="../../src/components/site-canvas-nest.js"></script>
-
-    <style>
-      #player-list-title {
-        font-size: 1.5rem;
-      }
-
-      div.player {
-        margin: 2rem;
-        border: 3px solid burlywood;
-        padding: 0.5rem;
-      }
-
-      div.player h4 {
-        font-size: 1.5rem;
-        color: rgb(0, 90, 91);
-      }
-
-      div.player h5 {
-        font-size: 1.05rem;
-        color: rgb(6, 120, 120);
-      }
-    </style>
+    <link rel="stylesheet" href="../styles/korea.css" />
+    <script type="module" src="../../src/metadata-sync.js"></script>
+    <script type="module" src="../../src/components/site-header.js"></script>
+    <script type="module" src="../../src/components/site-canvas-nest.js"></script>
   </head>
 
   <body>
@@ -102,11 +141,6 @@
         </div>
       </section>
     </main>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js"></script>
-        <script type="module" src="../script.js"></script> -->
-    <site-canvas-nest
-      color="140,252,3"
-      point-color="3,252,157"
-    ></site-canvas-nest>
+    <site-canvas-nest color="140,252,3" point-color="3,252,157"></site-canvas-nest>
   </body>
 </html>

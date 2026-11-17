@@ -1,12 +1,22 @@
-# 圍棋資訊網 (Go Information Site)
+# 圍棋資訊網 (Go Info Site)
 
-一個以現代網頁設計與組件化架構打造的圍棋資訊教育網站，詳細介紹圍棋的歷史背景、各國發展（中國、日本、韓國、台灣）以及豐富的圍棋文化術語。
+一個介紹圍棋起源、規則、文化與各地區圍棋組織（韓國棋院、日本棋院、中國棋院及台灣海峰棋院）的多頁面靜態資訊網站。
 
-## 🌟 特色 (Features)
+## Features
 
-- **現代響應式佈局**：採用 Flexbox 等現代 CSS 技術，適應各種螢幕大小。
-- **組件化開發 (Web Components)**：
-  - `<site-header>`：統一控制全站導覽列，支援動態 active 狀態切換。
-  - `<site-canvas-nest>`：提供美觀的粒子背景動畫，支援自訂顏色與點數設定。
-- **多語系與地區化內容**：涵蓋中國、日本、韓國、台灣的圍棋發展史與棋院組織。
-- **開發者友善環境**：預配置 **ESLint** 與 **Prettier**，保障代碼品質與排版一致性。
+- **多頁面專題內容**: 涵蓋圍棋基礎介紹與韓國、日本、中國、台灣四大圍棋組織與棋士介紹。
+- **組件化開發**: 使用 `<site-header>` 與 `<site-canvas-nest>` 原生 Web Components 統一管理導覽列與粒子背景。
+- **互動式資料視覺化**: 日本棋戰頁面整合 Google Charts 圓餅圖呈現七大棋戰獎金分佈。
+- **現代響應式佈局**: 採用 Flexbox 佈局適應不同螢幕尺寸。
+
+## Technologies
+
+- HTML5
+- CSS3
+- Vanilla JavaScript (ES Modules & Web Components)
+- Google Charts & `canvas-nest.js`
+- ESLint, Prettier, Husky, and `lint-staged`
+
+## Local Preview
+
+Open `index.html` with VS Code Live Server or run a local static server from the project root.

@@ -1,0 +1,42 @@
+section#japan-intro {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div#japan-image {
+  flex: 1 1 300px;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+div#japan-info {
+  flex: 3 1 600px;
+  margin: 1rem;
+}
+
+div#japan-image > img {
+  width: 100%;
+}
+
+section#competition {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div#competition-info {
+  flex: 6 1 300px;
+  min-width: 55vw;
+}
+
+div#competition-piechart-container {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#competition-piechart > div {
+  width: 100%;
+}

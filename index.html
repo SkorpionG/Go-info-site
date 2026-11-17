@@ -1,68 +1,73 @@
 <!doctype html>
 <html lang="zh-Hant">
   <head>
+    <!-- Primary Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <site-metadata root="./"></site-metadata>
+    <meta
+      name="description"
+      content="深入探索圍棋的世界：介紹圍棋的起源、規則、文化與現代圍棋組織（韓國、日本、中國、台灣棋院）。"
+    />
+    <meta name="author" content="圍棋資訊網" />
+    <meta name="creator" content="SkorpionG" />
+    <meta name="publisher" content="SkorpionG" />
+    <meta name="application-name" content="圍棋資訊網" />
+    <meta
+      name="keywords"
+      content="圍棋, 圍棋資訊網, 韓國棋院, 日本棋院, 中國棋院, 海峰棋院, 圍棋歷史"
+    />
+
+    <!-- Search Engine Indexing -->
+    <meta name="robots" content="index, follow" />
+    <!-- <meta name="robots" content="noindex, nofollow" /> -->
+    <link rel="canonical" href="https://skorpiong.github.io/Go-info-site/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://skorpiong.github.io/Go-info-site/" />
+    <meta property="og:title" content="圍棋資訊網" />
+    <meta
+      property="og:description"
+      content="深入探索圍棋的世界：介紹圍棋的起源、規則、文化與現代圍棋組織（韓國、日本、中國、台灣棋院）。"
+    />
+    <meta
+      property="og:image"
+      content="https://skorpiong.github.io/Go-info-site/public/og-image.png"
+    />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="536" />
+    <meta property="og:image:alt" content="木製棋盤與黑白圍棋棋子" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:site_name" content="圍棋資訊網" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://skorpiong.github.io/Go-info-site/" />
+    <meta name="twitter:title" content="圍棋資訊網" />
+    <meta
+      name="twitter:description"
+      content="深入探索圍棋的世界：介紹圍棋的起源、規則、文化與現代圍棋組織（韓國、日本、中國、台灣棋院）。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://skorpiong.github.io/Go-info-site/public/twitter-image.png"
+    />
+    <meta name="twitter:image:alt" content="木製棋盤與黑白圍棋棋子" />
+
+    <!-- Favicons and App Icons -->
+    <link rel="icon" href="./public/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./public/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./public/apple-touch-icon.png" />
+    <link rel="manifest" href="./public/site.webmanifest" />
+
+    <title>圍棋資訊網</title>
+
+    <!-- Stylesheets & Scripts -->
     <link rel="stylesheet" href="./src/styles/style.css" />
-    <script src="./src/components/site-metadata.js"></script>
-    <script src="./src/components/site-header.js"></script>
-    <script src="./src/components/site-canvas-nest.js"></script>
-
-    <style>
-      main#index-main {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      section#main-info-left {
-        flex: 1 1 20%;
-        min-width: 300px;
-        padding-left: 1.75rem;
-        padding-right: 0.25rem;
-      }
-
-      section#main-info-left img {
-        width: 90%;
-        height: auto;
-        margin-bottom: 0.5rem;
-      }
-
-      section#main-info-left h3 {
-        margin-bottom: 1rem;
-      }
-
-      /* Table */
-
-      section#main-info-left table {
-        margin-top: 1rem;
-        width: 100%;
-      }
-
-      section#main-info-left table,
-      section#main-info-left td {
-        padding: 0.25rem;
-      }
-
-      table .game-description-title {
-        width: 30%;
-      }
-
-      table .game-description-answer {
-        width: 60%;
-      }
-
-      /* Section Right */
-
-      section#main-info-right {
-        flex: 4 1 500px;
-      }
-
-      section#main-info-right h3 {
-        font-size: 1.5rem;
-        padding-top: 0.5rem;
-      }
-    </style>
+    <link rel="stylesheet" href="./src/styles/home.css" />
+    <script type="module" src="./src/metadata-sync.js"></script>
+    <script type="module" src="./src/components/site-header.js"></script>
+    <script type="module" src="./src/components/site-canvas-nest.js"></script>
   </head>
 
   <body>
@@ -105,9 +110,7 @@
           </tr>
           <tr class="table-row">
             <td class="game-description-title">所需技巧</td>
-            <td class="game-description-answer">
-              策略、記憶、觀察、判斷、細算
-            </td>
+            <td class="game-description-answer">策略、記憶、觀察、判斷、細算</td>
           </tr>
         </table>
       </section>
@@ -151,9 +154,7 @@
             <li>
               氣：在棋盤上與棋子緊緊相鄰的空交叉點，一個棋子的氣數不可能超過四氣，但相連的棋子則可能有四氣以上。在對方棋子的活路上落子緊迫，稱為「緊氣」。
             </li>
-            <li>
-              提：無氣的棋子要被提子，拿離棋盤。提吃對方的棋子，稱為「提子」。
-            </li>
+            <li>提：無氣的棋子要被提子，拿離棋盤。提吃對方的棋子，稱為「提子」。</li>
             <li>目：棋盤上，被一方棋子所圍的空白交點，稱為「目」。</li>
             <li>地：活棋所包圍的目數和活棋本身之總和，稱為「地」。</li>
             <li>空：用棋子圍成的地域。</li>
@@ -164,9 +165,6 @@
         </section>
       </section>
     </main>
-    <site-canvas-nest
-      color="252,244,3"
-      point-color="28,3,252"
-    ></site-canvas-nest>
+    <site-canvas-nest color="252,244,3" point-color="28,3,252"></site-canvas-nest>
   </body>
 </html>

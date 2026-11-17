@@ -1,13 +1,14 @@
 {
   "name": "go-info-site",
   "version": "1.0.0",
-  "description": "A static, informational website about the game \"Go\"",
+  "description": "A static informational website about the game of Go (圍棋).",
   "private": true,
+  "type": "module",
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "eslint src/**/*.js",
-    "lint:fix": "eslint src/**/*.js --fix",
+    "lint": "eslint \"src/**/*.js\"",
+    "lint:fix": "eslint \"src/**/*.js\" --fix",
     "prepare": "husky",
     "husky:init": "chmod +x .husky/pre-commit"
   },
@@ -15,16 +16,24 @@
     "type": "git",
     "url": "git+https://github.com/SkorpionG/Go-info-site.git"
   },
-  "keywords": [],
+  "keywords": [
+    "go",
+    "weiqi",
+    "baduk",
+    "igo",
+    "informational-site"
+  ],
   "author": "SkorpionG",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/SkorpionG/Go-info-site/issues"
   },
   "homepage": "https://github.com/SkorpionG/Go-info-site#readme",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "eslint": "^10.15.0",
     "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.7",
+    "globals": "^17.14.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.1",
     "prettier": "^3.10.1"

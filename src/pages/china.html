@@ -1,36 +1,76 @@
 <!doctype html>
 <html lang="zh-Hant">
   <head>
+    <!-- Primary Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <site-metadata
-      title="圍棋資訊網 | 中國棋院"
-      description="深入了解中國圍棋的歷史發展與現代中國棋院。介紹陳祖德、聶衛平、馬曉春及常昊等一代棋聖與世界冠軍的傳奇故事。"
-      keywords="中國圍棋, 中國棋院, 聶衛平, 圍棋歷史, 圍棋國手"
-      root="../../"
-    ></site-metadata>
+    <meta
+      name="description"
+      content="深入了解中國圍棋的歷史發展與現代中國棋院。介紹陳祖德、聶衛平、馬曉春及常昊等一代棋聖與世界冠軍的傳奇故事。"
+    />
+    <meta name="author" content="圍棋資訊網" />
+    <meta name="creator" content="SkorpionG" />
+    <meta name="publisher" content="SkorpionG" />
+    <meta name="application-name" content="圍棋資訊網" />
+    <meta name="keywords" content="中國圍棋, 中國棋院, 聶衛平, 圍棋歷史, 圍棋國手" />
+
+    <!-- Search Engine Indexing -->
+    <meta name="robots" content="index, follow" />
+    <!-- <meta name="robots" content="noindex, nofollow" /> -->
+    <link rel="canonical" href="https://skorpiong.github.io/Go-info-site/src/pages/china.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://skorpiong.github.io/Go-info-site/src/pages/china.html"
+    />
+    <meta property="og:title" content="圍棋資訊網 | 中國棋院" />
+    <meta
+      property="og:description"
+      content="深入了解中國圍棋的歷史發展與現代中國棋院。介紹陳祖德、聶衛平、馬曉春及常昊等一代棋聖與世界冠軍的傳奇故事。"
+    />
+    <meta
+      property="og:image"
+      content="https://skorpiong.github.io/Go-info-site/public/og-image.png"
+    />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="536" />
+    <meta property="og:image:alt" content="木製棋盤與黑白圍棋棋子" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:site_name" content="圍棋資訊網" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://skorpiong.github.io/Go-info-site/src/pages/china.html"
+    />
+    <meta name="twitter:title" content="圍棋資訊網 | 中國棋院" />
+    <meta
+      name="twitter:description"
+      content="深入了解中國圍棋的歷史發展與現代中國棋院。介紹陳祖德、聶衛平、馬曉春及常昊等一代棋聖與世界冠軍的傳奇故事。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://skorpiong.github.io/Go-info-site/public/twitter-image.png"
+    />
+    <meta name="twitter:image:alt" content="木製棋盤與黑白圍棋棋子" />
+
+    <!-- Favicons and App Icons -->
+    <link rel="icon" href="../../public/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="../../public/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../../public/apple-touch-icon.png" />
+    <link rel="manifest" href="../../public/site.webmanifest" />
+
+    <title>圍棋資訊網 | 中國棋院</title>
+
+    <!-- Stylesheets & Scripts -->
     <link rel="stylesheet" href="../styles/style.css" />
-    <script src="../../src/components/site-metadata.js"></script>
-    <script src="../../src/components/site-header.js"></script>
-    <script src="../../src/components/site-canvas-nest.js"></script>
-    <style>
-      #china-team-table,
-      #china-team-table th,
-      #china-team-table td {
-        border: 1px solid white;
-        border-collapse: collapse;
-        padding: 2px 4px;
-      }
-
-      #china-team-table {
-        min-width: 100%;
-      }
-
-      #china-team-table th {
-        background-color: rgb(86, 224, 192);
-        color: white;
-      }
-    </style>
+    <link rel="stylesheet" href="../styles/china.css" />
+    <script type="module" src="../../src/metadata-sync.js"></script>
+    <script type="module" src="../../src/components/site-header.js"></script>
+    <script type="module" src="../../src/components/site-canvas-nest.js"></script>
   </head>
 
   <body>
@@ -163,9 +203,6 @@
         </table>
       </section>
     </main>
-    <site-canvas-nest
-      color="252,115,3"
-      point-color="252,3,3"
-    ></site-canvas-nest>
+    <site-canvas-nest color="252,115,3" point-color="252,3,3"></site-canvas-nest>
   </body>
 </html>
